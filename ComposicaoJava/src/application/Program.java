@@ -34,7 +34,7 @@ public class Program {
 		int n = sc.nextInt();
 		
 		for (int i=1; i<=n; i++) {
-			System.out.println("Enter contract #" + i + " data:");
+			System.out.println("Enter contract #" + i + " data: ");
 			System.out.print("Date (DD/MM/YYYY): ");
 			Date contractDate = sdf.parse(sc.next());
 			System.out.print("Value per hour: ");
@@ -53,6 +53,7 @@ public class Program {
 		System.out.println("Name: " + worker.getName());
 		System.out.println("Department: " + worker.getDepartment().getName());
 		System.out.println("Income for " + monthAndYear + ": " + String.format("%.2f", worker.income(year, month)));
+		
 		
 		sc.close();
 	}
